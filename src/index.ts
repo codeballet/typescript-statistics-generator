@@ -1,11 +1,9 @@
-import { CsvFileReader } from './CsvFileReader';
+import { MatchReader } from './MatchReader';
 import { MatchResult } from './MatchResult';
 
 // Read a csv file and split into 2D Array
-const reader = new CsvFileReader('football.csv');
+const reader = new MatchReader('football.csv');
 reader.read();
-
-console.log(reader.data[0]);
 
 let manUnitedWins = 0;
 
